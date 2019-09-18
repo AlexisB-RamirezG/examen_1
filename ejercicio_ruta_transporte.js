@@ -79,6 +79,8 @@ class Salida {
     constructor(camion, base, ruta) {
         this._numeroCamionSalida = camion.numeroCamion;
         this._nombreBaseInicio = base.nombre;
+        this._horaInicio = 0;
+        this._horaFin = 0;
     }
 
     get numeroCamionSalida() {
@@ -88,4 +90,20 @@ class Salida {
     get nombreBaseInicio() {
         return this._nombreBaseInicio;
     }
+
+    get horaInicio() {
+        return this._horaInicio;
+    }
+
+    get horaFin() {
+        return this._horaFin;
+    }
+
+    set horaInicio(horaInicio) {
+        this._horaInicio = horaInicio;
+    }
+
+    set horaFin(horaFin) {
+        this._horaFin = horaFin;
+    } 
 }
